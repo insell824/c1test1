@@ -14,7 +14,7 @@ app.get('/**', async (req, res) => {
   } catch (err) {
     result = 'Error: ' + err.message
   }
-  res.send(`Message: v1フロントサーバー <br> Path: ${req.url} <br> Time: ${Date.now() / 1000} <br> Axios: ${url} <div style="border:1px solid grey;">${result}</div>`)
+  res.send(`Message: v2フロントサーバー <br> Path: ${req.url} <br> Time: ${Date.now() / 1000} <br> Axios: ${url} <div style="border:1px solid grey;">${result}</div>`)
 })
 
 console.log('Front-Server Start')

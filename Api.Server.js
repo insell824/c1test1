@@ -5,7 +5,7 @@ const logger = require('morgan')
 const axios = require('axios')
 app.use(logger('tiny'))
 app.get('/**', async (req, res) => {
-  res.send(`v1APIサーバー${port}${req.url} ${Date.now()/1000}`)
+  res.send(`v2APIサーバー${port}${req.url} ${Date.now()/1000}`)
 })
 
 console.log('Api-Server Start')
