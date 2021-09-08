@@ -6,8 +6,8 @@ const axios = require('axios')
 app.use(logger('tiny'))
 app.get('/**', async (req, res) => {
   let result = null
-  var url = 'http://localhost:3011/api'
   var url = 'http://apiserver:3011/api'
+  var url = 'http://localhost:3011/api'
   try {
     const { data } = await axios.get(url, { timeout: 3000 })
     result = data
