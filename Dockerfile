@@ -3,7 +3,7 @@ FROM docker.io/library/node@sha256:289a5e686ccfd79d2cf6e3cded8a5baae90eeb655e46c
 ARG APP_TYPE
 ARG APP_PORT
 ENV APP_TYPE=$APP_TYPE
-
+ENV PORT=$APP_PORT
 WORKDIR /usr/src/app
 
 
